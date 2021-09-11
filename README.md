@@ -1,4 +1,7 @@
 #Progetto Programmazione di Reti
+
+Componente del gruppo: Lorenzo Cavallucci (0000915669)
+
 Traccia 1 progetto di Reti, anno 2020/2021.
 Per il corretto funzionamento del progetto, seguire i seguenti passaggi:
     1) Aprire i 3 file .py;
