@@ -25,7 +25,7 @@ while True:
     try:
         for i in range(4):
             print('Device ' + str(i+1) + ':')
-            now = time.time()  
+            startingTime = time.time()  
             file = generateFile(i)
             file.seek(0)
             sent = socket.sendto(file.read().encode(), server_address)
@@ -33,7 +33,7 @@ while True:
             print("Dimensione del buffer di trasmissine: %d" %bufferSize)
             data, server = socket.recvfrom(bufferSize)
             print('Messaggio ricevuto:  "%s"' % data.decode('utf8'))
-            print("La trasmissione ha impiegato %g secondi\n" %(time.time() - now))
+            print("La trasmissione ha impiegato %g secondi\n" %(time.time() - startingTime))
         
     except Exception as info :
         print(info)
